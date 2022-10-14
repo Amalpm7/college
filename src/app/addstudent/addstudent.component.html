@@ -5,27 +5,27 @@
             <div class="row">
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
                   <label for="" class="form-label">Name</label>
-                  <input placeholder="enter your name" type="text" class="form-control"> 
+                  <input placeholder="enter your name" type="text" class="form-control" name="name" [(ngModel)]="name"> 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Roll no</label>
-                    <input placeholder="enter your Roll no" type="text" class="form-control"> 
+                    <input placeholder="enter your Roll no" type="text" class="form-control" name="rollNo" [(ngModel)]="rollNo"> 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">College Id</label>
-                    <input placeholder="enter your Colege Id" type="text" class="form-control"> 
+                    <input placeholder="enter your Colege Id" type="text" class="form-control" name="collegeId" [(ngModel)]="collegeId"> 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
                    <label for="" class="form-label">Parent Name</label>
-                   <input placeholder="enter your parent's name" type="text" class="form-control"> 
+                   <input placeholder="enter your parent's name" type="text" class="form-control" name="parentName" [(ngModel)]="parentName"> 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">DOB</label>
-                    <input placeholder="enter your parent's name" type="date" class="form-control"> 
+                    <input placeholder="DOB" type="date" class="form-control" name="dob" [(ngModel)]="dob"> 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Address</label>
-                    <textarea placeholder="Enter your Address" name="" id="" cols="30" rows="10" class="form-control"></textarea>
+                    <textarea placeholder="Enter your Address" name="address" id="" cols="30" rows="10" class="form-control" [(ngModel)]="address"></textarea>
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
@@ -34,15 +34,15 @@
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Parent'sMobile Number</label>
-                    <input placeholder="enter your parent's  mobile Number" type="text" class="form-control">
+                    <input placeholder="enter your parent's  mobile Number" type="text" class="form-control" name="mobnum" [(ngModel)]="mobnum">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Email Id</label>
-                    <input placeholder="enter your Email Id" type="email" class="form-control">
+                    <input placeholder="enter your Email Id" type="email" class="form-control" name="email" [(ngModel)]="email">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
                     <label for="" class="form-label">Blood Group</label>
-                    <select name="" id="" class="form-control">
+                    <select name="bloodG" id="" class="form-control" [(ngModel)]="bloodG">
                         <option value="A+ve">A+ve</option>
                         <option value="A-ve">A-ve</option>
                         <option value="B+ve">B+ve</option>
@@ -52,7 +52,7 @@
                     </select>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 col-xxl-3">
-                    <button class="btn btn-danger">Submit</button>
+                    <button class="btn btn-danger" (click)="readValue()">Submit</button>
 
                 </div>
             </div>
