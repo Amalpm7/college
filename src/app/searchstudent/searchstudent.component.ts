@@ -8,6 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class SearchstudentComponent implements OnInit {
 
   constructor() { }
+  rollNo=""
+  getvalue=()=>{
+    let data ={
+      "rollNo":this.rollNo
+    }
+    console.log(data)
+  }
 
   ngOnInit(): void {
   }
